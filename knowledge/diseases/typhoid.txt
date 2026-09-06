@@ -1,0 +1,32 @@
+Disease: Typhoid Fever
+Category: Infectious Disease
+Summary: A bacterial infection spread through contaminated food or water.
+Symptoms:
+- fever
+- weakness
+- headache
+- abdominal pain
+- loss of appetite
+- constipation or diarrhea
+Red Flags / Emergency Warning Signs:
+- severe abdominal pain
+- blood in stool
+- confusion
+- dehydration
+Causes:
+- Salmonella Typhi bacteria
+Risk Factors:
+- unsafe water
+- poor sanitation
+- street food
+Prevention:
+- safe water
+- handwashing
+- food hygiene
+- vaccination where recommended
+Lifestyle Advice:
+- hydration
+- light diet
+- complete prescribed antibiotics if given
+Treatment Overview: Antibiotics are commonly required and should be prescribed by a doctor.
+When To See A Doctor: If persistent fever, abdominal pain, or dehydration occurs.

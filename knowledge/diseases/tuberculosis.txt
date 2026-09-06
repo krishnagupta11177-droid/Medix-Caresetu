@@ -1,0 +1,32 @@
+Disease: Tuberculosis
+Category: Infectious Disease
+Summary: A bacterial infection that most commonly affects the lungs and can be serious if untreated.
+Symptoms:
+- cough lasting more than 2 weeks
+- weight loss
+- night sweats
+- fever
+- fatigue
+- blood in sputum
+Red Flags / Emergency Warning Signs:
+- coughing blood
+- severe weight loss
+- difficulty breathing
+- persistent fever
+Causes:
+- Mycobacterium tuberculosis
+Risk Factors:
+- close contact with active TB
+- weak immune system
+- crowded living conditions
+Prevention:
+- early diagnosis
+- treatment of active cases
+- ventilation
+- contact screening
+Lifestyle Advice:
+- complete prescribed treatment
+- nutrition support
+- avoid close contact until advised
+Treatment Overview: TB requires a full course of prescribed antibiotics and medical supervision.
+When To See A Doctor: If persistent cough, fever, night sweats, or weight loss occurs.

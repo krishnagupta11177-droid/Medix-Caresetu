@@ -1,0 +1,34 @@
+Disease: Tension-Type Headache
+Category: Neurological
+Summary: A common headache causing pressure or tightness, often related to stress or muscle tension.
+Symptoms:
+- pressure around head
+- neck tension
+- mild to moderate pain
+- stress-related worsening
+Red Flags / Emergency Warning Signs:
+- sudden severe headache
+- weakness
+- confusion
+- fever
+- vision changes
+Causes:
+- stress
+- poor posture
+- eye strain
+- lack of sleep
+Risk Factors:
+- sedentary work
+- anxiety
+- screen strain
+Prevention:
+- stress management
+- regular breaks
+- good posture
+- sleep hygiene
+Lifestyle Advice:
+- hydration
+- stretching
+- screen breaks
+Treatment Overview: Lifestyle measures and occasional pain relief may help, but frequent headaches need evaluation.
+When To See A Doctor: If headaches are frequent, worsening, or severe.

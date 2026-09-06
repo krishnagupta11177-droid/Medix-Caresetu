@@ -1,0 +1,29 @@
+Disease: Hepatitis A
+Category: Liver
+Summary: A viral liver infection spread mainly through contaminated food or water.
+Symptoms:
+- fatigue
+- nausea
+- abdominal pain
+- dark urine
+- jaundice
+Red Flags / Emergency Warning Signs:
+- severe abdominal pain
+- confusion
+- persistent vomiting
+- severe jaundice
+Causes:
+- hepatitis A virus
+Risk Factors:
+- unsafe water
+- poor sanitation
+Prevention:
+- handwashing
+- safe water
+- vaccination where recommended
+Lifestyle Advice:
+- rest
+- hydration
+- avoid alcohol
+Treatment Overview: Usually supportive care; severe cases need hospital assessment.
+When To See A Doctor: If jaundice, severe vomiting, or confusion occurs.

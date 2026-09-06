@@ -1,0 +1,29 @@
+Disease: Type 1 Diabetes
+Category: Endocrine
+Summary: An autoimmune condition where the body produces little or no insulin.
+Symptoms:
+- excessive thirst
+- frequent urination
+- weight loss
+- fatigue
+- increased hunger
+Red Flags / Emergency Warning Signs:
+- vomiting
+- confusion
+- fruity breath
+- severe weakness
+- rapid breathing
+Causes:
+- autoimmune destruction of insulin-producing cells
+Risk Factors:
+- family history
+- genetic predisposition
+Prevention:
+- no reliable prevention
+- early diagnosis is important
+Lifestyle Advice:
+- insulin adherence
+- carbohydrate awareness
+- blood sugar monitoring
+Treatment Overview: Insulin therapy is essential and must be supervised medically.
+When To See A Doctor: Urgently if signs of diabetic ketoacidosis appear.

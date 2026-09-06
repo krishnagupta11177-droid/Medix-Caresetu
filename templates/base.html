@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}MEDIX — CareSetu{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+{% from 'icons.html' import icon %}
+<div class="app">
+  <aside class="sidebar" aria-label="Sidebar">
+    <div class="side-brand">
+      <span class="logo-mark">{{ icon('heart') }}</span>
+      <div class="brand-text"><strong>MEDIX </strong><small>CareSetu</small></div>
+    </div>
+    <nav class="side-nav">
+      <p class="nav-label">Workspace</p>
+      <a class="nav-item {{ 'active' if request.endpoint == 'dashboard' }}" href="{{ url_for('dashboard') }}">{{ icon('home') }}<span>Dashboard</span></a>
+
+      {% if session.get('role') in ['doctor', 'admin'] %}
+        <a class="nav-item {{ 'active' if request.endpoint == 'search' }}" href="{{ url_for('search') }}">{{ icon('search') }}<span>Patient Search</span></a>
+      {% endif %}
+
+      {% if session.get('role') == 'doctor' %}
+        <a class="nav-item {{ 'active' if request.endpoint == 'chat' }}" href="{{ url_for('chat') }}">{{ icon('chat') }}<span>Clinical Chatbot</span></a>
+      {% endif %}
+
+      {% if session.get('role') == 'admin' %}
+        <p class="nav-label">Management</p>
+        <a class="nav-item {{ 'active' if request.endpoint == 'admin_doctors' }}" href="{{ url_for('admin_doctors') }}">{{ icon('userplus') }}<span>Manage Doctors</span></a>
+        <a class="nav-item {{ 'active' if request.endpoint == 'add_patient' }}" href="{{ url_for('add_patient') }}">{{ icon('plus') }}<span>Add Patient</span></a>
+        <a class="nav-item" href="{{ url_for('refresh_knowledge') }}">{{ icon('refresh') }}<span>Refresh Knowledge</span></a>
+        <a class="nav-item {{ 'active' if request.endpoint == 'admin_data' }}" href="{{ url_for('admin_data') }}">{{ icon('shield') }}<span>System Activity</span></a>
+      {% endif %}
+
+      {% if session.get('role') in ['admin', 'doctor'] %}
+        <a class="nav-item {{ 'active' if request.endpoint == 'approvals' }}" href="{{ url_for('approvals') }}">{{ icon('file') }}<span>Approvals</span>{% if nav_pending %}<span class="nav-badge">{{ nav_pending }}</span>{% endif %}</a>
+      {% endif %}
+
+      {% if session.get('role') == 'patient' %}
+        <a class="nav-item {{ 'active' if request.endpoint in ['my_record', 'patient_record'] }}" href="{{ url_for('my_record') }}">{{ icon('folder') }}<span>My Medical Record</span></a>
+        <a class="nav-item {{ 'active' if request.endpoint == 'chat' }}" href="{{ url_for('chat') }}">{{ icon('chat') }}<span>Health Assistant</span></a>
+      {% endif %}
+    </nav>
+    <div class="side-foot">
+      <div class="user-chip">
+        <span class="avatar">{{ (session.get('username') or '?')[:2] | upper }}</span>
+        <div class="user-meta">
+          <strong>{{ session.get('username') }}</strong>
+          <small>{{ session.get('role') | capitalize }}</small>
+        </div>
+      </div>
+      <a class="nav-item danger" href="{{ url_for('logout') }}">{{ icon('logout') }}<span>Sign out</span></a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn" onclick="document.body.classList.toggle('nav-open')" aria-label="Toggle navigation">{{ icon('menu') }}</button>
+      <h1 class="page-title">{% block page_title %}Dashboard{% endblock %}</h1>
+      <span class="role-pill">{{ session.get('role') | capitalize }}</span>
+    </header>
+    <main class="content">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="toasts" role="status">
+            {% for message in messages %}<div class="toast">{{ icon('check') }}<span>{{ message }}</span></div>{% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+</div>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+</body>
+</html>

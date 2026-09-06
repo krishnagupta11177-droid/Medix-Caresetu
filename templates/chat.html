@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% from 'icons.html' import icon %}
+{% block page_title %}Clinical Chatbot{% endblock %}
+{% block content %}
+  <section class="card chat-shell">
+    <div class="chat-head">
+      <span class="avatar">{{ icon('heart') }}</span>
+      <div>
+        <strong style="font-family:var(--font-display);">Health Voice Assistant</strong>
+        <p class="card-sub" style="margin:0;">Not a substitute for a doctor</p>
+      </div>
+      <button class="btn btn-ghost btn-sm" style="margin-left:auto;" onclick="stopVoice()">{{ icon('stop') }} Stop Voice</button>
+    </div>
+
+    {% if session.get('role') == 'doctor' %}
+      <div style="padding:14px 20px 0;"><div class="banner doctor" style="margin:0;">Doctor mode — ask patient history via PAT-ID or name, plus PDF knowledge.</div></div>
+    {% else %}
+      <div style="padding:14px 20px 0;"><div class="banner patient" style="margin:0;">Patient mode — symptom guidance, medication safety & PDF knowledge. Record summaries are disabled in chat.</div></div>
+    {% endif %}
+
+    <div class="chat-body" id="chat"></div>
+
+    <div class="composer">
+      <div class="chips" style="margin-bottom:12px;">
+        {% if session.get('role') == 'doctor' %}
+          <button class="chip" type="button" onclick="fillPrompt('Show history of PAT-1001')">PAT-1001 history</button>
+          <button class="chip" type="button" onclick="fillPrompt('Summary of PAT-1008')">PAT-1008 summary</button>
+          <button class="chip" type="button" onclick="fillPrompt('Hypertension precautions')">Hypertension</button>
+          <button class="chip" type="button" onclick="fillPrompt('Asthma action plan')">Asthma</button>
+        {% else %}
+          <button class="chip" type="button" onclick="fillPrompt('What should I do if I have fever?')">Fever</button>
+          <button class="chip" type="button" onclick="fillPrompt('Common cold symptoms')">Cold</button>
+          <button class="chip" type="button" onclick="fillPrompt('Diet tips for diabetes')">Diabetes diet</button>
+          <button class="chip" type="button" onclick="fillPrompt('Medication safety tips')">Medication safety</button>
+        {% endif %}
+      </div>
+      <div class="composer-row">
+        <select id="language"><option value="en">English</option><option value="hi">हिंदी</option></select>
+        <input id="message" placeholder="Type your question…" autocomplete="off">
+        <button class="btn btn-ghost btn-icon" id="micBtn" onclick="toggleMic()" title="Speak">{{ icon('mic') }}</button>
+        <button class="btn btn-primary btn-icon" onclick="sendChat()" title="Send">{{ icon('send') }}</button>
+      </div>
+      <div class="voice-row">
+        <label><input type="checkbox" id="speakReplies"> Speak replies</label>
+        <label><input type="checkbox" id="handsFree"> Hands-free mode</label>
+        <span>Voice depends on browser support — Chrome/Edge recommended.</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const micBtn = document.getElementById("micBtn");
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    let recognition = null, listening = false;
+
+    function addMessage(sender, text){
+      const div = document.createElement("div");
+      div.className = "message " + sender;
+      div.textContent = text;
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+      return div;
+    }
+    function fillPrompt(t){ document.getElementById("message").value = t; document.getElementById("message").focus(); }
+
+    function speak(text){
+      if (!document.getElementById("speakReplies").checked || !("speechSynthesis" in window)) return;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    function stopVoice(){ if ("speechSynthesis" in window) speechSynthesis.cancel(); }
+
+    function toggleMic(){
+      if (!SR){ addMessage("ai", "Voice input is not supported in this browser."); return; }
+      if (listening){ recognition.stop(); return; }
+      recognition = new SR();
+      recognition.lang = document.getElementById("language").value === "hi" ? "hi-IN" : "en-IN";
+      recognition.onresult = e => {
+        const t = e.results[0][0].transcript;
+        document.getElementById("message").value = t;
+        if (document.getElementById("handsFree").checked) sendChat();
+      };
+      recognition.onend = () => { listening = false; micBtn.classList.remove("rec"); };
+      recognition.start();
+      listening = true; micBtn.classList.add("rec");
+    }
+
+    async function sendChat(){
+      const input = document.getElementById("message");
+      const message = input.value.trim();
+      if (!message) return;
+      addMessage("me", message);
+      input.value = "";
+      const typing = addMessage("ai typing", "");
+      typing.innerHTML = '<span></span><span></span><span></span>';
+      try {
+        const res = await fetch("/chat", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({message, language: document.getElementById("language").value})
+        });
+        const data = await res.json();
+        typing.remove();
+        if (data.requires_login){ window.location.href = "/login"; return; }
+        addMessage("ai", data.reply || "No response.");
+        speak(data.reply || "");
+      } catch (e) {
+        typing.remove();
+        addMessage("ai", "Error: could not reach the assistant backend.");
+      }
+    }
+
+    document.getElementById("message").addEventListener("keypress", e => { if (e.key === "Enter") sendChat(); });
+    addMessage("ai", "Hello. I can help with health guidance, symptom checks, medication safety and PDF-based knowledge.");
+  </script>
+{% endblock %}

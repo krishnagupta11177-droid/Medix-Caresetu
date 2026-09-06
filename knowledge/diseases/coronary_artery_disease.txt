@@ -1,0 +1,32 @@
+Disease: Coronary Artery Disease
+Category: Cardiovascular
+Summary: Narrowing of heart arteries, which can cause chest pain and heart attack.
+Symptoms:
+- chest discomfort
+- shortness of breath
+- fatigue
+- pain in arm or jaw
+Red Flags / Emergency Warning Signs:
+- severe chest pain
+- sweating
+- breathlessness
+- fainting
+- pain spreading to arm or jaw
+Causes:
+- atherosclerosis
+Risk Factors:
+- smoking
+- diabetes
+- hypertension
+- high cholesterol
+- family history
+Prevention:
+- control risk factors
+- healthy diet
+- exercise
+- avoid smoking
+Lifestyle Advice:
+- cardiac rehabilitation where advised
+- regular follow-up
+Treatment Overview: Medicines, lifestyle changes, and procedures may be required under specialist care.
+When To See A Doctor: Urgently if chest pain or heart attack symptoms occur.

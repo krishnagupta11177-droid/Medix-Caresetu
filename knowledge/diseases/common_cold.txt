@@ -1,0 +1,35 @@
+Disease: Common Cold
+Category: Respiratory
+Summary: A mild viral infection of the upper respiratory tract that usually improves on its own.
+Symptoms:
+- runny or blocked nose
+- sore throat
+- sneezing
+- mild cough
+- low-grade fever
+- fatigue
+Red Flags / Emergency Warning Signs:
+- difficulty breathing
+- chest pain
+- confusion
+- dehydration
+- fever lasting more than 3 days
+- symptoms worsening after initial improvement
+Causes:
+- rhinoviruses and other respiratory viruses
+Risk Factors:
+- close contact with infected people
+- poor hand hygiene
+- weakened immune system
+Prevention:
+- wash hands regularly
+- avoid touching face
+- avoid close contact with sick people
+- clean frequently touched surfaces
+Lifestyle Advice:
+- rest
+- drink fluids
+- warm saline gargles
+- humidified air
+Treatment Overview: Supportive care is usually sufficient. Antibiotics do not treat common cold viruses.
+When To See A Doctor: If symptoms are severe, persistent, or red flags appear.

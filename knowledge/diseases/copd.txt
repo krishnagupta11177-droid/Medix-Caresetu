@@ -1,0 +1,32 @@
+Disease: COPD
+Category: Respiratory
+Summary: A chronic lung disease causing airflow limitation, cough, and breathlessness.
+Symptoms:
+- chronic cough
+- breathlessness
+- wheezing
+- chest tightness
+- frequent chest infections
+Red Flags / Emergency Warning Signs:
+- severe breathlessness
+- confusion
+- bluish lips
+- worsening symptoms despite treatment
+Causes:
+- long-term exposure to irritants
+- smoking
+- biomass smoke
+Risk Factors:
+- smoking
+- older age
+- occupational dust or chemicals
+Prevention:
+- avoid smoking
+- avoid smoke exposure
+- vaccination where recommended
+Lifestyle Advice:
+- pulmonary rehabilitation
+- breathing exercises
+- avoid triggers
+Treatment Overview: Long-term inhalers, lifestyle changes, and medical follow-up are commonly used.
+When To See A Doctor: If breathing difficulty increases or infections become frequent.

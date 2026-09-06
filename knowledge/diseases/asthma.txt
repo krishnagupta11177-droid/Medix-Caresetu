@@ -1,0 +1,33 @@
+Disease: Asthma
+Category: Respiratory
+Summary: A chronic airway condition causing episodes of wheezing, breathlessness, chest tightness, and cough.
+Symptoms:
+- wheezing
+- shortness of breath
+- chest tightness
+- cough
+- nighttime symptoms
+Red Flags / Emergency Warning Signs:
+- severe breathlessness
+- difficulty speaking full sentences
+- reliever inhaler not helping
+- bluish lips
+Causes:
+- airway inflammation and hyperresponsiveness
+Risk Factors:
+- allergies
+- family history
+- smoke exposure
+- air pollution
+- dust mites
+Prevention:
+- avoid triggers
+- use controller medicine if prescribed
+- avoid smoke
+- vaccination where advised
+Lifestyle Advice:
+- trigger control
+- carry reliever inhaler if prescribed
+- regular review
+Treatment Overview: Controller and reliever inhalers are commonly used under medical guidance.
+When To See A Doctor: If symptoms are frequent, worsening, or reliever is needed often.

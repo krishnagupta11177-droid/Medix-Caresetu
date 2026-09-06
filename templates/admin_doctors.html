@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% from 'icons.html' import icon %}
+{% block page_title %}Manage Doctors{% endblock %}
+{% block content %}
+  <div class="grid-2">
+    <section class="card">
+      <div class="card-head"><div><h3>Add New Doctor</h3><p class="card-sub">Creates a full doctor login account.</p></div></div>
+      <form method="post">
+        <label>Doctor Username *</label><input name="username" placeholder="e.g. dr_rahul" required>
+        <label>Doctor Full Name *</label><input name="name" placeholder="e.g. Dr. Rahul Mehta" required>
+        <label>Password *</label><input name="password" type="password" placeholder="Minimum 6 characters" required>
+        <label>Medical Emergency / Contact</label><input name="medical_emergency" placeholder="Blood Group: O+, Contact: 98…">
+        <button class="btn btn-primary" style="margin-top:18px;" type="submit">{{ icon('userplus') }} Add Doctor</button>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><div><h3>Existing Doctors</h3><p class="card-sub">{{ doctors|length }} account(s)</p></div></div>
+      {% if doctors %}
+        <div class="table-wrap">
+          <table>
+            <tr><th>Username</th><th>Name</th><th>Last Login</th></tr>
+            {% for d in doctors %}
+              <tr>
+                <td><strong style="color:var(--ink);">{{ d.get('username','') }}</strong></td>
+                <td>{{ d.get('name','') }}</td>
+                <td>{{ d.get('last_login','') or 'Not logged in' }}</td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+      {% else %}<p>No doctor accounts yet.</p>{% endif %}
+    </section>
+  </div>
+{% endblock %}

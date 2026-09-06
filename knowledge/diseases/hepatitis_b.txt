@@ -1,0 +1,29 @@
+Disease: Hepatitis B
+Category: Liver
+Summary: A viral liver infection spread through blood or body fluids.
+Symptoms:
+- fatigue
+- jaundice
+- dark urine
+- abdominal discomfort
+- loss of appetite
+Red Flags / Emergency Warning Signs:
+- severe jaundice
+- confusion
+- swelling
+- bleeding tendency
+Causes:
+- hepatitis B virus
+Risk Factors:
+- unprotected sex
+- needle exposure
+- mother-to-child transmission
+Prevention:
+- vaccination
+- safe injection practices
+- screening
+Lifestyle Advice:
+- regular liver monitoring
+- avoid alcohol
+Treatment Overview: Some cases require antiviral treatment and long-term monitoring.
+When To See A Doctor: If jaundice or liver symptoms occur.

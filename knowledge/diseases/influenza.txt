@@ -1,0 +1,38 @@
+Disease: Influenza
+Category: Respiratory
+Summary: A contagious respiratory viral illness that often causes fever, body aches, and fatigue.
+Symptoms:
+- fever
+- chills
+- body aches
+- headache
+- dry cough
+- sore throat
+- fatigue
+Red Flags / Emergency Warning Signs:
+- difficulty breathing
+- persistent chest pain
+- confusion
+- severe weakness
+- bluish lips
+- dehydration
+Causes:
+- influenza A or B viruses
+Risk Factors:
+- older age
+- young children
+- pregnancy
+- chronic disease
+- weak immunity
+Prevention:
+- annual flu vaccination
+- hand hygiene
+- avoiding sick contacts
+- covering coughs and sneezes
+Lifestyle Advice:
+- rest
+- fluids
+- fever monitoring
+- isolation while symptomatic
+Treatment Overview: Rest, fluids, fever control, and medical assessment for high-risk patients.
+When To See A Doctor: If breathing difficulty, confusion, persistent fever, or dehydration occurs.

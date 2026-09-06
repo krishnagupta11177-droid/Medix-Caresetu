@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% from 'icons.html' import icon %}
+{% block page_title %}Patient Record{% endblock %}
+{% block content %}
+  {% set parts = patient.get('name','').split() %}
+  {% set initials = (parts[0][:1] if parts else 'P') + (parts[1][:1] if parts|length > 1 else '') %}
+
+  <section class="card">
+    <div class="patient-head">
+      <span class="avatar-lg">{{ initials | upper }}</span>
+      <div class="ident" style="flex:1;min-width:260px;">
+        <h2>{{ patient.get('name','') }} <span class="pid">{{ patient.get('patient_id','') }}</span></h2>
+        <div class="meta-chips">
+          <span class="mchip">{{ patient.get('age','') }} / {{ patient.get('gender','') }}</span>
+          <span class="mchip">Blood: {{ patient.get('blood_group','') }}</span>
+          {% if role in ['doctor','patient'] %}<span class="mchip alert">{{ patient.get('diagnosis','') }}</span>{% endif %}
+        </div>
+      </div>
+      {% if role in ['doctor','patient'] %}<a class="btn btn-primary" href="{{ url_for('chat') }}">{{ icon('chat') }} Open Chatbot</a>{% endif %}
+    </div>
+  </section>
+
+  <div class="grid-2">
+    {% if role in ['doctor','patient'] %}
+      <section class="card">
+        <div class="card-head"><h3>Clinical Information</h3></div>
+        <dl style="margin:0;">
+          <div class="kv"><dt>Diagnosis</dt><dd>{{ patient.get('diagnosis','') or '-' }}</dd></div>
+          <div class="kv"><dt>Medical History</dt><dd>{{ patient.get('medical_history','') or '-' }}</dd></div>
+          <div class="kv"><dt>Medications</dt><dd>{{ patient.get('medications','') or '-' }}</dd></div>
+          <div class="kv"><dt>Allergies</dt><dd>{% if patient.get('allergies') %}<span class="badge bad">{{ patient.get('allergies') }}</span>{% else %}None reported{% endif %}</dd></div>
+        </dl>
+      </section>
+    {% endif %}
+    <section class="card">
+      <div class="card-head"><h3>Contact & Record Meta</h3></div>
+      <dl style="margin:0;">
+        <div class="kv"><dt>Emergency Contact</dt><dd>{{ patient.get('medical_emergency','') or '-' }}</dd></div>
+        {% if role == 'doctor' %}<div class="kv"><dt>Aadhaar</dt><dd>{{ patient.get('aadhaar_no','') or '-' }}</dd></div>{% endif %}
+        <div class="kv"><dt>Last Updated</dt><dd>{{ patient.get('last_updated','') or '-' }}</dd></div>
+      </dl>
+    </section>
+  </div>
+
+  {% if role == 'patient' %}
+    <section class="card">
+      <div class="card-head"><div><h3>Upload New Document</h3><p class="card-sub">Sent for Admin and Doctor approval after upload.</p></div></div>
+      <form method="post" action="{{ url_for('upload_document') }}" enctype="multipart/form-data" class="form-grid">
+        <div><label>Document (PDF / PNG / JPG)</label><input type="file" name="document" accept=".pdf,.png,.jpg,.jpeg" required></div>
+        <div><label>Note</label><input type="text" name="note" placeholder="e.g. Blood report — March 2026"></div>
+        <div class="full"><button class="btn btn-primary" type="submit">{{ icon('upload') }} Send for Approval</button></div>
+      </form>
+    </section>
+  {% endif %}
+
+  <section class="card">
+    <div class="card-head"><h3>Documents</h3></div>
+    {% if docs %}
+      <div class="table-wrap">
+        <table>
+          <tr><th>File</th><th>Note</th><th>Status</th><th>Reviewed By</th><th>View</th></tr>
+          {% for doc in docs %}
+            <tr>
+              <td><strong style="color:var(--ink);">{{ doc.get('original_filename','') }}</strong></td>
+              <td>{{ doc.get('note','') or '-' }}</td>
+              <td>
+                {% if doc.get('status') == 'Approved' %}<span class="badge ok">Approved</span>
+                {% elif doc.get('status') == 'Rejected' %}<span class="badge bad">Rejected</span>
+                {% else %}<span class="badge warn">Pending</span>{% endif %}
+              </td>
+              <td>
+                {% if doc.get('reviewed_by') %}{{ doc.get('reviewed_by') }} ({{ doc.get('reviewed_role','') | capitalize }}){% else %}-{% endif %}
+              </td>
+              <td>
+                {% if role in ['admin','doctor'] or doc.get('status') == 'Approved' %}
+                  <a href="{{ url_for('view_document', request_id=doc.get('request_id')) }}" target="_blank">View</a>
+                {% else %}Pending{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    {% else %}<p>No documents found.</p>{% endif %}
+  </section>
+{% endblock %}

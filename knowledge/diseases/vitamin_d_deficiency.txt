@@ -1,0 +1,31 @@
+Disease: Vitamin D Deficiency
+Category: Nutritional
+Summary: Low vitamin D levels can affect bones, muscles, and general well-being.
+Symptoms:
+- fatigue
+- bone pain
+- muscle weakness
+- mood changes
+- frequent infections
+Red Flags / Emergency Warning Signs:
+- severe bone pain
+- fractures with minimal injury
+- severe muscle weakness
+Causes:
+- low sun exposure
+- low dietary intake
+- malabsorption
+Risk Factors:
+- indoor lifestyle
+- older age
+- dark skin
+- obesity
+Prevention:
+- safe sun exposure
+- fortified foods
+- supplementation if advised
+Lifestyle Advice:
+- regular outdoor activity
+- balanced diet
+Treatment Overview: Supplementation is commonly used after testing.
+When To See A Doctor: If fatigue, bone pain, or muscle weakness persist.

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from 'icons.html' import icon %}
+{% block page_title %}Patient Search{% endblock %}
+{% block content %}
+  <div class="card search-hero">
+    <h2>Find a patient record</h2>
+    <p>Search by Patient ID or exact full name.</p>
+    {% if error %}<div class="banner error" style="max-width:520px;margin:16px auto 0;">{{ error }}</div>{% endif %}
+    <form method="post" class="search-bar">
+      <input type="text" name="patient_query" placeholder="Enter Ayush ID or Name" required>
+      <button class="btn btn-primary" type="submit">{{ icon('search') }} Search</button>
+    </form>
+    <div class="chips" style="justify-content:center;margin-top:18px;">
+      <button class="chip" type="button" onclick="quick('1001')">1001</button>
+      <button class="chip" type="button" onclick="quick('1006')">1006</button>
+      <button class="chip" type="button" onclick="quick('Sunita Rao')">Sunita Rao</button>
+      <button class="chip" type="button" onclick="quick('Arjun Nair')">Arjun Nair</button>
+    </div>
+  </div>
+  <script>
+    function quick(v){ document.querySelector('input[name="patient_query"]').value=v; document.querySelector('.search-bar').submit(); }
+  </script>
+{% endblock %}

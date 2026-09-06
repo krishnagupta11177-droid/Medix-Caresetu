@@ -1,0 +1,34 @@
+Disease: Heart Failure
+Category: Cardiovascular
+Summary: A condition where the heart cannot pump blood effectively enough for the body's needs.
+Symptoms:
+- breathlessness
+- leg swelling
+- fatigue
+- reduced exercise tolerance
+- night cough
+Red Flags / Emergency Warning Signs:
+- severe breathlessness
+- pink frothy sputum
+- confusion
+- chest pain
+Causes:
+- coronary disease
+- hypertension
+- cardiomyopathy
+- valve disease
+Risk Factors:
+- older age
+- diabetes
+- hypertension
+- previous heart attack
+Prevention:
+- control blood pressure
+- diabetes care
+- avoid smoking
+Lifestyle Advice:
+- salt restriction
+- fluid monitoring where advised
+- daily weight monitoring
+Treatment Overview: Long-term medicines and monitoring are usually required.
+When To See A Doctor: If swelling, breathlessness, or fatigue worsen.

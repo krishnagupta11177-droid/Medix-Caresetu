@@ -1,0 +1,29 @@
+Disease: Peptic Ulcer Disease
+Category: Gastrointestinal
+Summary: Sores in the stomach or upper intestine, often associated with H. pylori or NSAID use.
+Symptoms:
+- burning stomach pain
+- bloating
+- nausea
+- loss of appetite
+Red Flags / Emergency Warning Signs:
+- vomiting blood
+- black stool
+- severe abdominal pain
+- fainting
+Causes:
+- H. pylori infection
+- NSAID use
+Risk Factors:
+- regular painkiller use
+- smoking
+- alcohol
+Prevention:
+- avoid unnecessary NSAIDs
+- treat H. pylori where indicated
+Lifestyle Advice:
+- avoid smoking
+- limit alcohol
+- regular meals
+Treatment Overview: Acid suppression and H. pylori treatment may be needed under medical care.
+When To See A Doctor: Urgently if bleeding signs occur.

@@ -1,0 +1,31 @@
+Disease: Urinary Tract Infection
+Category: Renal/Urological
+Summary: An infection of the urinary tract, commonly causing burning urination and frequency.
+Symptoms:
+- burning urination
+- frequent urination
+- urgent urination
+- lower abdominal discomfort
+- cloudy urine
+Red Flags / Emergency Warning Signs:
+- fever
+- back pain
+- vomiting
+- blood in urine
+- confusion in older adults
+Causes:
+- bacterial infection
+Risk Factors:
+- female sex
+- dehydration
+- holding urine
+- catheter use
+Prevention:
+- hydration
+- good hygiene
+- avoid holding urine
+Lifestyle Advice:
+- fluid intake
+- complete prescribed treatment
+Treatment Overview: Antibiotics are commonly required and should be prescribed after evaluation.
+When To See A Doctor: If fever, back pain, or symptoms persist.

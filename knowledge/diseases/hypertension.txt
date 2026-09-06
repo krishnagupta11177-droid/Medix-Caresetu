@@ -1,0 +1,40 @@
+Disease: Hypertension
+Category: Cardiovascular
+Summary: Persistently high blood pressure, which increases risk of heart disease, stroke, and kidney disease.
+Symptoms:
+- often no symptoms
+- headache
+- dizziness
+- nosebleeds in severe cases
+Red Flags / Emergency Warning Signs:
+- severe headache
+- chest pain
+- difficulty breathing
+- vision changes
+- confusion
+- weakness
+Causes:
+- genetics
+- excess salt
+- obesity
+- stress
+- kidney disease
+Risk Factors:
+- family history
+- high salt diet
+- sedentary lifestyle
+- obesity
+- alcohol use
+Prevention:
+- reduce salt
+- exercise regularly
+- maintain healthy weight
+- limit alcohol
+- manage stress
+Lifestyle Advice:
+- home BP monitoring
+- DASH-style diet
+- regular activity
+- sleep hygiene
+Treatment Overview: Lifestyle modification and prescribed antihypertensive medicines are commonly used.
+When To See A Doctor: If readings are repeatedly high or red-flag symptoms occur.

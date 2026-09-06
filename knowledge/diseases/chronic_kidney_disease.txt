@@ -1,0 +1,35 @@
+Disease: Chronic Kidney Disease
+Category: Renal
+Summary: A gradual loss of kidney function over time, often linked to diabetes or hypertension.
+Symptoms:
+- fatigue
+- swelling
+- reduced urine output
+- nausea
+- poor appetite
+- itching
+Red Flags / Emergency Warning Signs:
+- severe swelling
+- breathlessness
+- confusion
+- very low urine output
+Causes:
+- diabetes
+- hypertension
+- glomerulonephritis
+- polycystic kidney disease
+Risk Factors:
+- diabetes
+- high blood pressure
+- family history
+- older age
+Prevention:
+- control diabetes and BP
+- avoid unnecessary painkillers
+- regular screening
+Lifestyle Advice:
+- salt control
+- protein management if advised
+- regular lab tests
+Treatment Overview: Treatment focuses on slowing progression and managing complications.
+When To See A Doctor: If kidney tests are abnormal or symptoms worsen.

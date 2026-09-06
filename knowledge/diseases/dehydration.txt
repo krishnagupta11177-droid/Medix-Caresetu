@@ -1,0 +1,35 @@
+Disease: Dehydration
+Category: General
+Summary: A condition caused by excessive loss or insufficient intake of fluids.
+Symptoms:
+- thirst
+- dry mouth
+- fatigue
+- dizziness
+- dark urine
+- reduced urination
+Red Flags / Emergency Warning Signs:
+- confusion
+- very low urine output
+- weak pulse
+- fainting
+- severe lethargy
+Causes:
+- diarrhea
+- vomiting
+- fever
+- excess sweating
+- poor fluid intake
+Risk Factors:
+- children
+- older adults
+- illness with fluid loss
+Prevention:
+- regular fluids
+- ORS during illness
+- avoid excessive heat exposure
+Lifestyle Advice:
+- sip fluids regularly
+- monitor urine color
+Treatment Overview: Mild dehydration can often be treated with fluids. Severe dehydration requires urgent care.
+When To See A Doctor: If severe weakness, confusion, or very low urine output occurs.

@@ -1,0 +1,31 @@
+Disease: Hypothyroidism
+Category: Endocrine
+Summary: A condition where the thyroid gland does not produce enough thyroid hormone.
+Symptoms:
+- fatigue
+- weight gain
+- cold intolerance
+- constipation
+- dry skin
+- hair loss
+Red Flags / Emergency Warning Signs:
+- severe swelling
+- confusion
+- very slow heart rate
+- difficulty breathing
+Causes:
+- Hashimoto thyroiditis
+- iodine deficiency
+- post-treatment hypothyroidism
+Risk Factors:
+- female sex
+- autoimmune disease
+- family history
+Prevention:
+- screening in high-risk groups
+- appropriate iodine intake
+Lifestyle Advice:
+- take prescribed thyroid medicine consistently
+- regular testing
+Treatment Overview: Thyroid hormone replacement is commonly prescribed and monitored.
+When To See A Doctor: If fatigue, weight gain, constipation, or cold intolerance persist.

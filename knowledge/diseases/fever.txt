@@ -1,0 +1,38 @@
+Disease: Fever
+Category: General
+Summary: An elevated body temperature, often caused by infection or inflammation.
+Symptoms:
+- warm body
+- chills
+- sweating
+- weakness
+- headache
+- loss of appetite
+Red Flags / Emergency Warning Signs:
+- very high fever
+- confusion
+- difficulty breathing
+- severe headache
+- rash
+- stiff neck
+- dehydration
+Causes:
+- infections
+- inflammatory conditions
+- heat illness
+- some medicines
+Risk Factors:
+- infection exposure
+- weak immune system
+- chronic illness
+Prevention:
+- hand hygiene
+- safe food and water
+- vaccination where appropriate
+Lifestyle Advice:
+- rest
+- fluids
+- light clothing
+- temperature monitoring
+Treatment Overview: Treat discomfort and monitor warning signs. Persistent fever needs medical evaluation.
+When To See A Doctor: If fever is high, persistent, or associated with red flags.

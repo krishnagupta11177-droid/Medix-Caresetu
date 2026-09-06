@@ -1,0 +1,31 @@
+Disease: Malaria
+Category: Infectious Disease
+Summary: A mosquito-borne parasitic illness causing fever, chills, and fatigue.
+Symptoms:
+- fever
+- chills
+- sweating
+- headache
+- body aches
+- fatigue
+Red Flags / Emergency Warning Signs:
+- confusion
+- severe weakness
+- difficulty breathing
+- persistent vomiting
+- dark urine
+Causes:
+- Plasmodium parasites transmitted by Anopheles mosquitoes
+Risk Factors:
+- travel to endemic areas
+- lack of mosquito protection
+Prevention:
+- mosquito nets
+- repellents
+- indoor spraying
+- preventive treatment where advised
+Lifestyle Advice:
+- early testing
+- complete prescribed treatment
+Treatment Overview: Antimalarial treatment should be guided by testing and medical care.
+When To See A Doctor: Urgently if fever occurs after travel to malaria areas.

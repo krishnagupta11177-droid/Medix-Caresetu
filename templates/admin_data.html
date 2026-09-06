@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block page_title %}System Activity{% endblock %}
+{% block content %}
+  <section class="card">
+    <div class="card-head"><div><h3>Users & Activity</h3><p class="card-sub">{{ rows|length }} accounts</p></div></div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Username</th><th>Name</th><th>Role</th><th>Linked Patient</th><th>Last Login</th></tr>
+        {% for row in rows %}
+          <tr>
+            <td><strong style="color:var(--ink);">{{ row.username }}</strong></td>
+            <td>{{ row.name }}</td>
+            <td>
+              {% if row.role == 'admin' %}<span class="badge info">Admin</span>
+              {% elif row.role == 'doctor' %}<span class="badge brand">Doctor</span>
+              {% elif row.role == 'patient' %}<span class="badge ok">Patient</span>
+              {% else %}<span class="badge warn">Staff</span>{% endif %}
+            </td>
+            <td>{{ row.linked_patient_id or '-' }}</td>
+            <td>{{ row.last_login }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </section>
+{% endblock %}

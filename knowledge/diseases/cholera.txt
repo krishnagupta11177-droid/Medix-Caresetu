@@ -1,0 +1,30 @@
+Disease: Cholera
+Category: Infectious Disease
+Summary: A bacterial infection causing severe watery diarrhea and dehydration.
+Symptoms:
+- watery diarrhea
+- vomiting
+- weakness
+- muscle cramps
+- dehydration
+Red Flags / Emergency Warning Signs:
+- severe dehydration
+- sunken eyes
+- very low urine output
+- confusion
+- weak pulse
+Causes:
+- Vibrio cholerae from contaminated water or food
+Risk Factors:
+- unsafe drinking water
+- poor sanitation
+Prevention:
+- safe water
+- oral rehydration
+- hand hygiene
+- sanitation
+Lifestyle Advice:
+- ORS and fluids
+- early medical care
+Treatment Overview: Rehydration is essential. Antibiotics may be used in severe cases under medical guidance.
+When To See A Doctor: Urgently if severe diarrhea or dehydration occurs.

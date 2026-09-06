@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% from 'icons.html' import icon %}
+{% block page_title %}Document Approvals{% endblock %}
+{% block content %}
+  <section class="card">
+    <div class="card-head">
+      <div>
+        <h3>Patient Document Requests</h3>
+        <p class="card-sub">Visible to Admin and Doctor. Either role can approve or reject.</p>
+      </div>
+    </div>
+
+    <div class="chips" style="margin-bottom:16px;">
+      <a class="chip" href="{{ url_for('approvals') }}">All</a>
+      <a class="chip" href="{{ url_for('approvals', status='Pending') }}">Pending</a>
+      <a class="chip" href="{{ url_for('approvals', status='Approved') }}">Approved</a>
+      <a class="chip" href="{{ url_for('approvals', status='Rejected') }}">Rejected</a>
+    </div>
+
+    {% if rows %}
+      <div class="table-wrap">
+        <table>
+          <tr><th>Document</th><th>Patient</th><th>Uploaded By</th><th>Note</th><th>Status</th><th>Reviewed By</th><th>Action</th></tr>
+          {% for row in rows %}
+            <tr>
+              <td>
+                {{ row.get('original_filename','') }}
+                <br><br>
+                <a href="{{ url_for('view_document', request_id=row.get('request_id')) }}" target="_blank">View Document</a>
+              </td>
+              <td><strong style="color:var(--ink);">{{ row.get('patient_id','') }}</strong></td>
+              <td>{{ row.get('username','') }}<br><small>{{ row.get('timestamp','')[:10] }}</small></td>
+              <td>{{ row.get('note','') or '-' }}</td>
+              <td>
+                {% if row.get('status') == 'Approved' %}<span class="badge ok">Approved</span>
+                {% elif row.get('status') == 'Rejected' %}<span class="badge bad">Rejected</span>
+                {% else %}<span class="badge warn">Pending</span>{% endif %}
+              </td>
+              <td>
+                {% if row.get('reviewed_by') %}
+                  {{ row.get('reviewed_by') }} ({{ row.get('reviewed_role','') | capitalize }})
+                  {% if row.get('review_note') %}<br><small>Note: {{ row.get('review_note') }}</small>{% endif %}
+                {% else %}-{% endif %}
+              </td>
+              <td>
+                {% if row.get('status') == 'Pending' %}
+                  <form method="post" action="{{ url_for('review_document_request', request_id=row.get('request_id')) }}">
+                    <input type="text" name="review_note" placeholder="Review note (optional)" style="min-width:180px;margin-bottom:8px;">
+                    <div style="display:flex;gap:8px;">
+                      <button class="btn btn-success btn-sm" name="status" value="Approved" type="submit">{{ icon('check') }} Approve</button>
+                      <button class="btn btn-danger btn-sm" name="status" value="Rejected" type="submit">{{ icon('stop') }} Reject</button>
+                    </div>
+                  </form>
+                {% else %}Already reviewed{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    {% else %}<p>No document requests found.</p>{% endif %}
+  </section>
+{% endblock %}

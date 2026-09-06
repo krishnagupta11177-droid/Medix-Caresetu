@@ -1,0 +1,31 @@
+Disease: Vitamin B12 Deficiency
+Category: Nutritional
+Summary: A deficiency that can cause anemia, fatigue, and nerve-related symptoms.
+Symptoms:
+- fatigue
+- weakness
+- numbness or tingling
+- poor balance
+- pale skin
+- mouth soreness
+Red Flags / Emergency Warning Signs:
+- severe weakness
+- difficulty walking
+- confusion
+Causes:
+- low dietary intake
+- malabsorption
+- certain medicines
+- gastric surgery
+Risk Factors:
+- vegetarian or vegan diet
+- older age
+- intestinal disease
+Prevention:
+- adequate dietary intake
+- supplementation when needed
+Lifestyle Advice:
+- B12-rich foods or fortified foods
+- regular testing if high risk
+Treatment Overview: Supplementation is often required, especially in symptomatic deficiency.
+When To See A Doctor: If fatigue, tingling, balance problems, or anemia symptoms occur.

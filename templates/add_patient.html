@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% from 'icons.html' import icon %}
+{% block page_title %}Add Patient{% endblock %}
+{% block content %}
+  <section class="card">
+    <div class="card-head"><div><h3>New Patient Record</h3><p class="card-sub">Leave Patient ID blank to auto-generate.</p></div></div>
+    <form method="post" class="form-grid">
+      <div><label>Patient ID</label><input name="patient_id" placeholder="Auto"></div>
+      <div><label>Full Name *</label><input name="name" required></div>
+      <div><label>Age</label><input name="age"></div>
+      <div><label>Gender</label><input name="gender" placeholder="Male / Female / Other"></div>
+      <div><label>Blood Group</label><input name="blood_group"></div>
+      <div><label>Diagnosis</label><input name="diagnosis"></div>
+      <div class="full"><label>Medical History</label><textarea name="medical_history"></textarea></div>
+      <div class="full"><label>Medications</label><textarea name="medications"></textarea></div>
+      <div class="full"><label>Allergies</label><textarea name="allergies"></textarea></div>
+      <div><label>Emergency Contact</label><input name="medical_emergency"></div>
+      <div><label>Aadhaar No</label><input name="aadhaar_no" placeholder="Redacted"></div>
+      <div class="full" style="background:var(--surface-2);border:1px dashed var(--line);border-radius:12px;padding:16px;">
+        <h3 style="font-size:15px;">Patient Login</h3>
+        <label style="margin-top:10px;"><input type="checkbox" name="create_login" checked> Create patient login</label>
+        <div class="form-grid">
+          <div><label>Username</label><input name="username" placeholder="Default = Patient ID"></div>
+          <div><label>Password</label><input name="password" placeholder="Default = patient123"></div>
+        </div>
+      </div>
+      <div class="full"><button class="btn btn-primary" type="submit">{{ icon('plus') }} Save Patient</button></div>
+    </form>
+  </section>
+{% endblock %}

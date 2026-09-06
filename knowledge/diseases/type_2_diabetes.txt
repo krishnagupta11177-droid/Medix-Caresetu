@@ -1,0 +1,37 @@
+Disease: Type 2 Diabetes
+Category: Endocrine
+Summary: A chronic condition where the body becomes resistant to insulin or does not use insulin effectively.
+Symptoms:
+- increased thirst
+- frequent urination
+- fatigue
+- increased hunger
+- slow wound healing
+- blurred vision
+Red Flags / Emergency Warning Signs:
+- severe dehydration
+- confusion
+- persistent vomiting
+- very high blood sugar readings
+Causes:
+- insulin resistance
+- genetic factors
+- obesity
+- sedentary lifestyle
+Risk Factors:
+- family history
+- overweight
+- physical inactivity
+- gestational diabetes history
+Prevention:
+- healthy diet
+- regular exercise
+- weight management
+- screening in high-risk groups
+Lifestyle Advice:
+- balanced meals
+- portion control
+- walking or exercise
+- blood sugar monitoring
+Treatment Overview: Lifestyle changes and medicines such as metformin or other agents may be prescribed by a doctor.
+When To See A Doctor: If symptoms of high blood sugar occur or readings remain uncontrolled.

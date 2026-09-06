@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% from 'icons.html' import icon %}
+{% block page_title %}Dashboard{% endblock %}
+{% block content %}
+  <section class="hero-card">
+    <div>
+      <h2>Welcome back, {{ session.get('username') }}</h2>
+      {% if role == 'doctor' %}<p>Search patient records, summarize medical history and query PDF-grounded clinical knowledge.</p>
+      {% elif role == 'admin' %}<p>Manage doctors, patients and document approvals. Chatbot access is disabled for admins.</p>
+      {% elif role == 'patient' %}<p>View your medical record, upload documents and ask your health assistant general questions.</p>
+      {% else %}<p>Your role has restricted access.</p>{% endif %}
+    </div>
+    <div>
+      {% if role == 'admin' %}<a class="btn btn-primary" href="{{ url_for('admin_doctors') }}">{{ icon('userplus') }} Add Doctor</a>
+      {% elif role == 'patient' %}<a class="btn btn-primary" href="{{ url_for('chat') }}">{{ icon('chat') }} Ask Assistant</a>
+      {% else %}<a class="btn btn-primary" href="{{ url_for('chat') }}">{{ icon('chat') }} Launch Chatbot</a>{% endif %}
+    </div>
+  </section>
+
+  <section class="stats-grid">
+    {% for s in stats %}
+      <article class="stat">
+        <span class="stat-icon tone-{{ s.tone }}">{{ icon(s.icon) }}</span>
+        <div><strong class="stat-value">{{ s.value }}</strong><span class="stat-label">{{ s.label }}</span></div>
+      </article>
+    {% endfor %}
+  </section>
+
+  {% if recent %}
+    <section class="card">
+      <div class="card-head">
+        <div><h3>Recent Patients</h3><p class="card-sub">Latest records on file</p></div>
+        <a class="btn btn-ghost btn-sm" href="{{ url_for('search') }}">{{ icon('search') }} Search all</a>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Patient</th><th>ID</th><th>Blood Group</th><th>Last Updated</th><th></th></tr>
+          {% for p in recent %}
+            <tr>
+              <td><strong style="color:var(--ink);">{{ p.get('name','') }}</strong></td>
+              <td><span class="pid">{{ p.get('patient_id','') }}</span></td>
+              <td><span class="badge brand">{{ p.get('blood_group','') }}</span></td>
+              <td>{{ p.get('last_updated','')[:10] }}</td>
+              <td><a class="btn btn-ghost btn-sm" href="{{ url_for('patient_record', patient_id=p.get('patient_id')) }}">View</a></td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </section>
+  {% endif %}
+{% endblock %}

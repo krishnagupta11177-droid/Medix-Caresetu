@@ -1,0 +1,33 @@
+Disease: Migraine
+Category: Neurological
+Summary: A recurrent headache disorder often associated with throbbing pain, nausea, and light sensitivity.
+Symptoms:
+- throbbing headache
+- nausea
+- vomiting
+- sensitivity to light or sound
+- visual aura
+Red Flags / Emergency Warning Signs:
+- sudden severe headache
+- weakness
+- confusion
+- vision loss
+- fever with stiff neck
+Causes:
+- genetic and environmental factors
+Risk Factors:
+- stress
+- sleep disturbance
+- hormonal changes
+- certain foods
+Prevention:
+- trigger identification
+- regular sleep
+- hydration
+- stress management
+Lifestyle Advice:
+- dark quiet room during attacks
+- regular meals
+- sleep hygiene
+Treatment Overview: Acute and preventive medicines may be prescribed depending on frequency.
+When To See A Doctor: If headaches are severe, frequent, or associated with neurological symptoms.

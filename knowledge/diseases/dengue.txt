@@ -1,0 +1,33 @@
+Disease: Dengue
+Category: Infectious Disease
+Summary: A mosquito-borne viral illness that can cause high fever, rash, and body pain.
+Symptoms:
+- high fever
+- severe headache
+- pain behind eyes
+- muscle and joint pain
+- rash
+- nausea
+Red Flags / Emergency Warning Signs:
+- severe abdominal pain
+- persistent vomiting
+- bleeding gums
+- blood in vomit or stool
+- restlessness
+Causes:
+- dengue virus transmitted by Aedes mosquitoes
+Risk Factors:
+- mosquito exposure
+- stagnant water
+- previous dengue infection
+Prevention:
+- eliminate stagnant water
+- mosquito repellents
+- screens
+- protective clothing
+Lifestyle Advice:
+- hydration
+- rest
+- platelet and warning-sign monitoring where advised
+Treatment Overview: Supportive care and hydration are important. Severe dengue needs urgent hospital care.
+When To See A Doctor: Immediately if warning signs or severe symptoms occur.

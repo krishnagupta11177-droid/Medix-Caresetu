@@ -1,0 +1,35 @@
+Disease: Acute Gastroenteritis
+Category: Gastrointestinal
+Summary: An infection or inflammation of the stomach and intestines causing diarrhea and vomiting.
+Symptoms:
+- diarrhea
+- vomiting
+- abdominal cramps
+- nausea
+- fever
+- weakness
+Red Flags / Emergency Warning Signs:
+- bloody stool
+- severe dehydration
+- high fever
+- severe abdominal pain
+- persistent vomiting
+Causes:
+- viruses
+- bacteria
+- parasites
+- contaminated food
+Risk Factors:
+- unsafe food
+- unsafe water
+- poor hand hygiene
+Prevention:
+- handwashing
+- safe food
+- clean water
+Lifestyle Advice:
+- ORS
+- small frequent fluids
+- light diet
+Treatment Overview: Fluid replacement is key. Antibiotics are only needed for selected causes.
+When To See A Doctor: If dehydration, blood in stool, or persistent vomiting occurs.

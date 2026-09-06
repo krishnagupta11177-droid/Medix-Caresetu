@@ -1,0 +1,30 @@
+Disease: Kidney Stones
+Category: Renal
+Summary: Hard deposits in the kidney or urinary tract that can cause severe pain.
+Symptoms:
+- severe flank pain
+- pain radiating to groin
+- blood in urine
+- nausea
+- painful urination
+Red Flags / Emergency Warning Signs:
+- fever with pain
+- uncontrolled vomiting
+- difficulty passing urine
+- severe pain
+Causes:
+- concentrated urine
+- dietary factors
+- metabolic causes
+Risk Factors:
+- low fluid intake
+- high salt diet
+- family history
+Prevention:
+- adequate hydration
+- dietary modifications based on stone type
+Lifestyle Advice:
+- drink fluids regularly
+- medical evaluation of recurrent stones
+Treatment Overview: Pain control and hydration are common. Larger stones may need procedures.
+When To See A Doctor: If pain is severe, fever occurs, or urine output decreases.

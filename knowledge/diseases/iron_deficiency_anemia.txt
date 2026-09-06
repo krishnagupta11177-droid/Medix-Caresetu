@@ -1,0 +1,35 @@
+Disease: Iron Deficiency Anemia
+Category: Blood
+Summary: A condition caused by insufficient iron, leading to low hemoglobin and fatigue.
+Symptoms:
+- fatigue
+- pallor
+- weakness
+- shortness of breath
+- dizziness
+- brittle nails
+Red Flags / Emergency Warning Signs:
+- chest pain
+- severe breathlessness
+- fainting
+- rapid heartbeat
+Causes:
+- low iron intake
+- blood loss
+- heavy menstrual bleeding
+- poor absorption
+Risk Factors:
+- menstruating women
+- pregnancy
+- vegetarian diet without adequate iron
+- GI bleeding
+Prevention:
+- iron-rich diet
+- treat heavy bleeding
+- screening in high-risk groups
+Lifestyle Advice:
+- iron-rich foods
+- vitamin C with iron sources
+- avoid tea/coffee around meals if advised
+Treatment Overview: Iron supplementation and investigation of the cause are commonly needed.
+When To See A Doctor: If fatigue is severe, persistent, or associated with chest pain or fainting.

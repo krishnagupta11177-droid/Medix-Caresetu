@@ -1,0 +1,30 @@
+Disease: GERD
+Category: Gastrointestinal
+Summary: A condition where stomach acid frequently flows back into the food pipe.
+Symptoms:
+- heartburn
+- acid taste
+- chest discomfort
+- regurgitation
+- chronic cough
+Red Flags / Emergency Warning Signs:
+- difficulty swallowing
+- vomiting blood
+- black stool
+- unexplained weight loss
+Causes:
+- lower esophageal sphincter dysfunction
+Risk Factors:
+- obesity
+- late-night meals
+- smoking
+- certain foods
+Prevention:
+- avoid large late meals
+- reduce trigger foods
+- maintain healthy weight
+Lifestyle Advice:
+- elevate head while sleeping
+- avoid lying down after meals
+Treatment Overview: Lifestyle changes and acid-reducing medicines are commonly used.
+When To See A Doctor: If symptoms are persistent or red flags occur.

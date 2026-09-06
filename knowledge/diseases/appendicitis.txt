@@ -1,0 +1,25 @@
+Disease: Appendicitis
+Category: Gastrointestinal
+Summary: Inflammation of the appendix, often causing worsening abdominal pain.
+Symptoms:
+- pain near navel moving to right lower abdomen
+- nausea
+- vomiting
+- fever
+- loss of appetite
+Red Flags / Emergency Warning Signs:
+- severe worsening pain
+- rigid abdomen
+- high fever
+- inability to pass gas
+Causes:
+- blockage and infection of appendix
+Risk Factors:
+- young age
+- family history
+Prevention:
+- no reliable prevention
+Lifestyle Advice:
+- seek early evaluation for severe abdominal pain
+Treatment Overview: Appendicitis usually requires urgent surgical evaluation.
+When To See A Doctor: Immediately if severe or worsening abdominal pain occurs.

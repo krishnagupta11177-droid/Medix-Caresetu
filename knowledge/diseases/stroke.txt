@@ -1,0 +1,35 @@
+Disease: Stroke
+Category: Neurological
+Summary: A medical emergency caused by interrupted blood flow to the brain or bleeding in the brain.
+Symptoms:
+- face drooping
+- arm weakness
+- speech difficulty
+- sudden numbness
+- sudden confusion
+- sudden vision trouble
+Red Flags / Emergency Warning Signs:
+- any sudden stroke symptom
+- severe sudden headache
+- loss of balance
+- difficulty speaking
+Causes:
+- blocked artery
+- bleeding in brain
+Risk Factors:
+- hypertension
+- diabetes
+- smoking
+- heart disease
+- high cholesterol
+Prevention:
+- control blood pressure
+- diabetes control
+- avoid smoking
+- healthy diet
+Lifestyle Advice:
+- regular exercise
+- medical adherence
+- stroke awareness
+Treatment Overview: Emergency treatment is time-critical. Immediate hospital care is required.
+When To See A Doctor: Call emergency services immediately if stroke symptoms appear.

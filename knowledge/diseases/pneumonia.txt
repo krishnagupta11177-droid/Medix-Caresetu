@@ -1,0 +1,36 @@
+Disease: Pneumonia
+Category: Respiratory
+Summary: An infection of the lungs that can cause cough, fever, and breathing difficulty.
+Symptoms:
+- cough
+- fever
+- chest pain while breathing or coughing
+- fatigue
+- shortness of breath
+Red Flags / Emergency Warning Signs:
+- severe breathing difficulty
+- bluish lips
+- confusion
+- persistent high fever
+- dehydration
+Causes:
+- bacteria
+- viruses
+- fungi
+Risk Factors:
+- older age
+- chronic lung disease
+- smoking
+- weak immune system
+Prevention:
+- vaccination where recommended
+- hand hygiene
+- avoid smoking
+- respiratory hygiene
+Lifestyle Advice:
+- rest
+- fluids
+- avoid smoking
+- follow-up care
+Treatment Overview: Treatment depends on cause. Bacterial pneumonia may require antibiotics prescribed by a doctor.
+When To See A Doctor: Immediately if breathing difficulty, chest pain, confusion, or low oxygen occurs.

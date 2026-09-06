@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEDIX — CareSetu | Sign in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+{% from 'icons.html' import icon %}
+<div class="login-wrap">
+  <div class="login-left">
+    <span class="logo-mark">{{ icon('heart') }}</span>
+    <h1>Clinical intelligence,<br>designed for calm.</h1>
+    <p>MEDIX — CareSetu unifies patient records, document approvals and an AI clinical assistant in one secure workspace.</p>
+    <div class="feature-list">
+      <div>{{ icon('shield') }} Role-based access for doctors, admins & patients</div>
+      <div>{{ icon('file') }} Patient document upload with approval workflow</div>
+      <div>{{ icon('chat') }} PDF-grounded clinical assistant with voice support</div>
+    </div>
+  </div>
+  <div class="login-right">
+    <div class="login-card">
+      <h2>Welcome back</h2>
+      <p>Sign in to your workspace</p>
+      {% if error %}<div class="banner error" style="margin-top:16px;">{{ error }}</div>{% endif %}
+      <form method="post">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="e.g. dr_sharma" required autofocus>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="••••••••" required>
+        <button class="btn btn-primary" style="width:100%;margin-top:20px;" type="submit">Sign in</button>
+      </form>
+      <div class="form-note">
+        <strong>Demo access</strong><br>
+        Admin — admin / 123<br>
+        Doctor — dr_sharma / pass_sharma_123<br>
+        Patient — PAT-1001 / patient123
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

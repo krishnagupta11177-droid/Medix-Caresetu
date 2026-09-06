@@ -1,0 +1,8 @@
+timestamp,searched_by,role,query_id,result_found
+2026-09-05T16:05:57+00:00,dr_sharma,doctor,PAT-1008,Yes
+2026-09-05T16:06:50+00:00,dr_sharma,doctor,PAT-2000,Yes
+2026-09-05T17:20:35+00:00,admin,admin,MIQDAD RANGWALA,Yes
+2026-09-05T17:20:59+00:00,dr_sharma,doctor,MIQDAD RANGWALA,Yes
+2026-09-05T17:24:28+00:00,dr_sharma,doctor,MIQDAD RANGWALA,Yes
+2026-09-05T17:31:58+00:00,dr_sharma,doctor,MIQDAD RANGWALA,Yes
+2026-09-06T17:58:25+00:00,dr_sharma,doctor,MIQDAD RANGWALA,Yes

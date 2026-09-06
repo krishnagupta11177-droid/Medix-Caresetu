@@ -1,0 +1,33 @@
+Disease: Hypoglycemia
+Category: Endocrine
+Summary: Abnormally low blood sugar, which can cause sweating, tremors, confusion, and weakness.
+Symptoms:
+- sweating
+- tremors
+- palpitations
+- hunger
+- weakness
+- confusion
+Red Flags / Emergency Warning Signs:
+- severe confusion
+- seizure
+- loss of consciousness
+Causes:
+- excess insulin or diabetes medicine
+- skipped meals
+- excess alcohol
+- intense exercise
+Risk Factors:
+- diabetes treatment
+- irregular meals
+- kidney disease
+Prevention:
+- regular meals
+- correct medicine dosing
+- carry fast-acting carbohydrate if advised
+Lifestyle Advice:
+- monitor blood sugar
+- do not skip meals
+- recognize early symptoms
+Treatment Overview: Fast-acting carbohydrate is commonly used for mild episodes. Severe cases need emergency care.
+When To See A Doctor: If episodes are frequent, severe, or associated with confusion or fainting.

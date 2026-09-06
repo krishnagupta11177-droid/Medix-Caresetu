@@ -1,0 +1,31 @@
+Disease: Hyperthyroidism
+Category: Endocrine
+Summary: A condition where the thyroid gland produces too much thyroid hormone.
+Symptoms:
+- weight loss
+- rapid heartbeat
+- anxiety
+- heat intolerance
+- tremor
+- loose stools
+Red Flags / Emergency Warning Signs:
+- severe palpitations
+- chest pain
+- difficulty breathing
+- severe agitation
+Causes:
+- Graves disease
+- thyroid nodules
+- thyroiditis
+Risk Factors:
+- family history
+- autoimmune disease
+- iodine excess
+Prevention:
+- regular screening in high-risk groups
+- avoid excess iodine unless advised
+Lifestyle Advice:
+- regular follow-up
+- manage palpitations and stress
+Treatment Overview: Antithyroid medicines, beta blockers, or other treatments may be prescribed.
+When To See A Doctor: If symptoms of overactive thyroid or heart symptoms occur.
